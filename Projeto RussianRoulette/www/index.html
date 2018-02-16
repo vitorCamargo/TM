@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <title>Russian Roulette</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+                @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+                @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="fonts/Selfie.css">
+        <link rel="stylesheet" type="text/css" href="fonts/Comfortaa.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="cordova.js" id="xdkJScordova_"></script>
+        <script src="js/app.js"></script>
+        <script src="js/init-app.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/java.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="justgage/js/raphael.min.js"></script>
+        <script type="application/javascript" src="justgage/js/justgage.min.js"></script>
+        <script type="application/javascript" src="justgage/gauges.js"></script>
+    </head>
+
+    <body>
+        <div class="upage vertical-col left" id="mainpage">
+
+            <div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <figure class="figure-align">
+                    <img src="images/inicial.gif" id="img_principal">
+                    <figcaption data-position="bottom"></figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="page_Playlists">
+            <div class="sbs-container widget uib_w_27 d-margins" data-uib="layout/side_by_side" data-ver="0" id="back_playlist">
+                <div class="leftContent widget-container">
+                    <button class="btn widget uib_w_28 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_back"><i class="fa fa-arrow-left button-icon-left" data-position="left"></i>
+                    </button>
+                </div>
+                <div class="rightContent widget-container"></div>
+            </div>
+            <div class="tarea widget uib_w_31 d-margins" data-uib="media/text" data-ver="0" name="uib_w_31" id="title_playlist">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Titulo</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_29 d-margins" data-uib="media/text" data-ver="0" name="uib_w_29" id="slogan_playlist">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Slogan</p>
+                </div>
+            </div>
+            <div class="widget uib_w_30 d-margins iframe-size" data-uib="media/iframe" data-ver="0">
+                <iframe id="player_playlist"></iframe>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="page_Artist">
+            <div class="sbs-container widget uib_w_11 d-margins" data-uib="layout/side_by_side" data-ver="0" id="back_artist">
+                <div class="leftContent widget-container">
+                    <button class="btn widget uib_w_12 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_back"><i class="fa fa-arrow-left button-icon-left" data-position="left"></i> 
+                    </button>
+                </div>
+                <div class="rightContent widget-container">
+                    <div class="widget uib_w_13" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/groups/Red Velvet.jpg" id="img_profile">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_32 d-margins" data-uib="media/text" data-ver="0" name="uib_w_32" id="txtNome_Artist">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Nome do Artista</p>
+                </div>
+            </div>
+
+            <div class="tarea widget uib_w_19 d-margins" data-uib="media/text" data-ver="0" name="uib_w_19" id="txtTitle_TopTracks">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Top Tracks</p>
+                </div>
+            </div>
+            <div class="widget uib_w_33 d-margins" data-uib="media/iframe" data-ver="0">
+                <iframe id="player_Artist"></iframe>
+            </div>
+            <div class="tarea widget uib_w_20 d-margins" data-uib="media/text" data-ver="0" name="uib_w_20" id="txtTitle_Info">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Info</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_18 d-margins" data-uib="media/text" data-ver="0" name="uib_w_18" id="txtInfo_Artist">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Aqui vai as informações adicionais sobre o grupo</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="upage vertical-col left hidden" id="page_Home">
+
+            <div class="sbs-container widget uib_w_2 d-margins" data-uib="layout/side_by_side" data-ver="0" id="menu">
+                <div class="leftContent widget-container">
+                    <div class="widget uib_w_3" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/Title.png" id="title_menu">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="rightContent widget-container"></div>
+            </div>
+            <div class="tarea widget uib_w_4" data-uib="media/text" data-ver="0" name="uib_w_4" id="txtGroups_Home">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Grupos</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_34 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_34" id="group1">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>RED VELVET</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_35 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_35" id="group2">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>SHINEE</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_36 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_36" id="group3">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>TWICE</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_37 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_37" id="group4">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>SUPER JUNIOR</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_38 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_38" id="group5">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>F(x)</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_39 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_39" id="group6">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>BTS</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_40 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_40" id="group7">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>GIRLS GENERATION</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_41 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_41" id="group8">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>EXO</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_42 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_42" id="group9">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>SISTAR</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_43 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_43" id="group10">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>GOT7</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_44 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_44" id="group11">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>2ne1</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_45 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_45" id="group12">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>SEVENTEEN</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_46 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_46" id="group13">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>BLACK PINK</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_47 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_47" id="group14">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>BIG BANG</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_48 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_48" id="group15">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>GFRIEND</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_49 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_49" id="group16">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>ASTRO</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_58 d-margins txtGroup_Home" data-uib="media/text" data-ver="0" name="uib_w_58" id="group17">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>BTOB</p>
+                </div>
+            </div>
+
+            <div class="tarea widget uib_w_21 d-margins" data-uib="media/text" data-ver="0" name="uib_w_21" id="txtPlaylists_Home">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Playlists</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_50 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_50" id="playlist1">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Women of K-POP</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_51 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_51" id="playlist2">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>K-Boyband Hysteria</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_52 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_52" id="playlist3">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>K-POP BALLAD</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_53 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_53" id="playlist4">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Mixtapes K-BAK</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_54 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_54" id="playlist5">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>SM TOWN STATION&nbsp;</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_55 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_55" id="playlist6">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Fantastics K-Covers</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_56 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_56" id="playlist7">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>K-Units Beats</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_57 d-margins txtPlaylist_Home" data-uib="media/text" data-ver="0" name="uib_w_57" id="playlist8">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>2016 MAMA</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

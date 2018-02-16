@@ -1,0 +1,279 @@
+.figure-align {
+    display: block !important;
+}
+
+.grid-pad {
+    padding: 0px !important;
+}
+
+#mainpage {
+    background-color: #f7ced1 !important;
+}
+
+#img_principal {
+    width: 150%;
+    margin-top: 45%;
+    margin-bottom: 50%;
+    margin-left: calc(-20% - 5px);
+}
+
+#menu {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 60px !important;
+    width: 100% !important;
+    background-color: #d6e9f5;
+}
+
+#title_menu {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-right: 0px !important;
+    margin-left: calc(100% - 51px) !important;
+    padding: 0px !important;
+    height: 60px !important;
+    width: auto !important;
+}
+
+#txtGroups_Home, #txtPlaylists_Home {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 0px !important;
+    width: 45%;
+    font-family: "Comfortaa-Regular";
+    font-size: 20px;
+    border-bottom: 1px black solid;
+}
+
+#txtGroups_Home p, #txtPlaylists_Home p {
+    margin: 0px !important;
+}
+
+.txtGroup_Home, .txtPlaylist_Home {
+    margin-top: 20px !important;
+    margin: 0px;
+    width: 90% !important;
+    height: 47px;
+    border-radius: 3px;
+    background: #d6e9f5;
+    color: dimgray;
+    font-family: "Comfortaa-Bold";
+    padding-top: 10px;
+    font-size: 23px;
+    text-align: center !important;
+    margin-left: 5% !important;
+}
+
+.txtPlaylist_Home {
+    background: #f7ced1 !important;
+}
+
+#back_playlist {
+    background-size: 100% auto !important;
+    background-position: center;
+}
+
+.uib_col_2, .uib_col_3, .uib_col_6, .uib_col_7, .uib_col_8, .uib_col_9 {
+    margin-top: 30px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    height: auto !important;
+    width: 42.5%;
+    margin-left: 5%;
+    border-radius: 50%;
+}
+
+.uib_col_2 {
+    background-image: url("../images/groups/Red%20Velvet.jpg");
+    background-size: 100% auto;
+    background-position-y: 10px;
+}
+
+.uib_col_3 {
+    background-image: url("../images/groups/Seventeen.jpeg");
+    background-size: 100% auto;
+    background-position-y: -80px;
+}
+
+.uib_col_6 {
+    background-image: url("../images/groups/BTS.jpg");
+    background-size: 100% auto;
+    background-position-y: 5px;
+}
+
+.uib_col_7 {
+    background-image: url("../images/groups/SNSD.jpeg");
+    background-size: 100% auto;
+    background-position-y: -25px;
+}
+
+.uib_col_8 {
+    background-image: url("../images/groups/EXID.jpg");
+    background-size: 100% auto;
+}
+
+.uib_col_9 {
+   background-image: url("../images/groups/EXO.jpg");
+    background-size: 100% auto;
+}
+
+.uib_col_10, .uib_col_11, .uib_col_12, .uib_col_13, .uib_col_14 {
+    height: 170px;
+    margin: 10px 20px 0px 20px;
+}
+
+.uib_col_10 {
+    background-image: url("../images/playlists/pl1.png");
+    background-size: 100% auto;
+}
+
+.uib_col_11 {
+    background-image: url("../images/playlists/pl2.png");
+    background-size: 100% auto;
+}
+
+.uib_col_12 {
+    background-image: url("../images/playlists/pl3.png");
+    background-size: 100% auto;
+}
+
+.uib_col_13 {
+    background-image: url("../images/playlists/pl4.png");
+    background-size: 100% auto;
+}
+
+.uib_col_14 {
+    background-image: url("../images/playlists/pl5.png");
+    background-size: 100% auto;
+}
+
+#txtPlaylist_Home {
+    margin: 30px auto 0px auto;
+    padding-top: 140px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    color: white;
+    font-family: "Comfortaa-Bold";
+    text-shadow: black 1px 1px;
+    font-size: 23px;
+}
+
+#back_artist {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 200px !important;
+    width: 100% !important;
+    background-color: #d6e9f5;
+}
+
+#button_back {
+    margin: 5px !important;
+    padding: 0px !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    text-shadow: black 1px 1px;
+}
+
+#img_profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: calc(100% - 75px);
+    margin-left: -75px;
+}
+
+#txtNome_Artist {
+    text-align: center;
+    font-family: "Comfortaa-Bold";
+    font-size: 35px;
+    margin-top: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#txtTitle_TopTracks, #txtTitle_Info {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Comfortaa-Bold";
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#txtTitle_TopTracks p, #txtTitle_Info p {
+    margin: 0px !important;
+}
+
+#txtTopTracks_Artist, #txtInfo_Artist {
+    font-family: "Comfortaa-Regular";
+    font-size: 18px;
+    margin: 5px 0px 0px 10px;
+}
+
+#txtInfo_Artist {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#back_playlist {
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 350px !important;
+    width: 100% !important;
+    background-color: #d6e9f5;
+}
+
+#title_playlist {
+    font-family: "Comfortaa-Bold";
+    text-align: center;
+    font-size: 25px;
+    margin: 20px auto auto 10px;
+    width: 90%;
+    border-bottom: black 1px solid;
+}
+
+#title_playlist p {
+    margin: 0px;
+}
+
+#slogan_playlist {
+    font-family: "Comfortaa-Regular";
+    text-align: center;
+    font-size: 20px;
+    margin: 30px auto auto 10px;
+    width: 90%;
+}
+
+#player_playlist {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 7.5%;
+    margin-right: auto;
+    width: 85% !important;
+    height: 130px !important;
+    max-height: 130px !important;
+}
+
+#player_Artist, #player_playlist {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 7.5%;
+    margin-right: auto;
+    width: 85% !important;
+    height: 450px !important;
+    max-height: 450px !important;
+}
+
+#playlist8 {
+    margin-bottom: 20px;
+}

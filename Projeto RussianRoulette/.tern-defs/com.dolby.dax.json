@@ -1,0 +1,30 @@
+{
+    "!name": "com.dolby.dax",
+    "!define": {
+        "!modules": {
+            "DolbyDap": {},
+            "DapError": {
+                "DAP_UNAVAILABLE": "number",
+                "NOT_CONNECTED": "number",
+                "INVALID_PARAM": "number",
+                "ACTION_NOT_ALLOWED": "number",
+                "RUNTIME_ERR": "number",
+                "!type": "fn(code: ?, message: ?)"
+            },
+            "DapProfile": {
+                "MOVIE": "string",
+                "MUSIC": "string",
+                "GAME": "string",
+                "VOICE": "string",
+                "DOLBY_PRIVATE_PROFILE": "string",
+                "!type": "fn()"
+            }
+        }
+    },
+    "!plugin-version": "1.0.0",
+    "dolby": {
+        "dap": "!modules.DolbyDap",
+        "DapError": "!modules.DapError",
+        "DapProfile": "!modules.DapProfile"
+    }
+}

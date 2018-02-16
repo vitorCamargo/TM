@@ -1,0 +1,25 @@
+/* Font Selfie */
+@font-face {
+  font-family: 'Selfie-Black';
+  src: url("Selfie_Black.otf");
+}
+
+@font-face {
+  font-family: 'Selfie-Flags';
+  src: url("Selfie_Flags.otf");
+}
+
+@font-face {
+  font-family: 'Selfie-Light';
+  src: url("Selfie_Light.otf");
+}
+
+@font-face {
+  font-family: 'Selfie-Printed';
+  src: url("Selfie_Printed.otf");
+}
+
+@font-face {
+  font-family: 'Selfie-Regular';
+  src: url("Selfie_Regular.otf");
+}
