@@ -1,0 +1,224 @@
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+}
+
+html {
+    -ms-touch-action: pan-x ;
+}
+
+body {
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+}
+
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+body {
+    background: #f0f0f0 ;
+    color: black ;
+}
+
+/* CSS Stylish */
+.uib-footer {
+    min-height: 0 !important;
+}
+
+#button_backMain, #button_backPageMain {
+    width: 40px !important;
+    position: absolute;
+    margin-bottom: 0px !important;
+    top: 5px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    border: none !important;
+    outline: none;
+    color: gray !important;
+    font-size: 35px !important;
+    z-index: 999;
+}
+
+#logo {
+    width: 90%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+#btMain1, #btMain2, #btMain3, #btMain4, #btMain5 {
+    width: 20% !important;
+    bottom: 0px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 40px !important;
+}
+
+#btMain1, #btAmor {
+    background: #F44336;
+}
+
+#btMain2, #btPedreiro {
+    background: #FFEB3B;
+}
+
+#btMain3, #btGospel {
+    background: #8BC34A;
+}
+
+#btMain4, #btNerd {
+    background: #00bcd4;
+}
+
+#btMain5, #btPokemon {
+    background: #2196F3;
+}
+
+#btKpop {
+    background: #3f51b5;
+}
+
+#btMain {
+    margin-top: 15%;
+    margin-left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    background: #333333;
+    color: #f0f0f0;
+    font-size: 70px;
+    border-radius: 50%;
+    padding: 9px;
+}
+
+#btAmor, #btPedreiro, #btGospel, #btNerd, #btPokemon, #btKpop {
+    font-family: 'LuckiestGuy';
+    border: none;
+    border-radius: 50%;
+    width: calc(100% + 20px);
+    left: -10px;
+    height: 90px;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+}
+
+#btAmor:hover, #btPokemon:hover {
+    background-image: url("../images/back2.jpg");
+    background-size: 150%;
+}
+
+#btPedreiro:hover, #btKpop:hover {
+    background-image: url("../images/back.jpg");
+    background-size: 150%;
+}
+
+#btGospel:hover, #btNerd:hover {
+    background-image: url("../images/back3.jpg");
+    background-size: 150%;
+}
+
+#txtTitle {
+    font-family: 'Exo';
+    text-align: center;
+    font-size: 20px;
+    color: #333333;
+    margin-top: 10%;
+}
+
+#kpop1, #kpop2, #kpop3, #kpop4, #kpop5, #kpop6, #kpop7 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #3f51b5;
+}
+
+#pok1, #pok2, #pok3, #pok4, #pok5, #pok6 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #2196F3;
+}
+
+#nerd1, #nerd2, #nerd3, #nerd4, #nerd5 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #00bcd4;
+}
+
+#gos1, #gos2, #gos3 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #8BC34A;
+}
+
+#ped1, #ped2, #ped3, #ped4, #ped5 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #FFEB3B;
+}
+
+#am1, #am2, #am3, #am4, #am5, #am6 {
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    width: 100%;
+    height: 90px;
+    font-size: 70px;
+    color: white;
+    outline: none;
+    margin: 0 !important;
+    background: #F44336;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url("../fonts/LuckiestGuy.ttf");
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url("../fonts/Exo.ttf");
+}
