@@ -1,0 +1,505 @@
+/* CSS Padrão */
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none; 
+    -ms-text-size-adjust: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    line-height: normal !important;
+}
+
+html {
+    -ms-touch-action: pan-x;
+}
+
+body {
+    -ms-touch-action: pan-y;
+    -ms-content-zooming: none;
+}
+
+input, textarea  {
+    -webkit-user-select: text; 
+    -moz-user-select: text; 
+    -ms-user-select: text; 
+    user-select: text;
+}
+
+body {
+    background: white;
+    color: black !important;
+}
+
+/* CSS Geral */
+button {
+    outline: none !important;
+}
+
+#button_settings {
+    width: 40px !important;
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    border: none;
+    color: gray !important;
+    font-size: 30px !important;
+    right: 0 !important;
+    position: absolute;
+}
+
+#button_backMain_game {
+    width: 40px !important;
+    z-index: 9999;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: gray !important;
+    font-size: 35px !important;
+    outline: none;
+}
+
+#button_backMain {
+    width: 40px !important;
+    margin-bottom: 0px !important;
+    margin-top: 5px !important;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    border: none !important;
+    color: gray !important;
+    font-size: 35px !important;
+}
+
+#button_backMain:active, #button_settings:active, #button_backMain_game {
+    color: dimgray !important;
+    outline: none; !important;
+}
+
+/* CSS Main */
+#mainpage button {
+    display: block;
+}
+
+#icon_main {
+    margin-top: 10px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 0;
+}
+
+#title_head_main p, #title_head_main {
+    margin-bottom: 0px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#title_main p {
+    font-size: 65px;
+    text-align: center;
+    font-family: 'KG Empire of Dirty';
+}
+
+#slogan_main {
+    margin-top: 20px !important;
+    margin-bottom: 15px !important;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#button_sick_main, #button_game_main, #button_aware_main, #button_complaint_main, #button_drinkWater_main {
+    color: white;
+    font-family: "KG Empire of Dirty";
+    width: 350px !important;
+    margin-bottom: 10px !important;
+    height: 60px;
+    font-size: 35px;
+    border-radius: 0px;
+}
+
+#button_settings_main {
+    color: gray;
+    width: 150px !important;
+    margin-bottom: 10px !important;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 0px;
+    background-color: rgba(51, 51, 51, 0.3);
+}
+
+#footer_main {
+    margin-top: 25px !important;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#footer_main span {
+    color: deepskyblue;
+}
+
+/* CSS Sick */
+#title_sick {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#subtitle_sick {
+    margin: auto !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 80% !important;
+    border-bottom: 1px black solid;
+}
+
+#title_sicks h4 {
+    font-size: 25px;
+    font-family: 'Lato';
+}
+
+#text_sicks {
+    font-family: 'Lato';
+    font-size: 22px;
+
+}
+
+/* CSS Aware */
+#title_aware {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#text_aware {
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 90% !important;
+}
+
+/* CSS Complaint */
+#title_complaint {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+#subtitle_complaint {
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 80% !important;
+    border-bottom: 1px black solid;
+}
+
+.uib_row_1, .uib_row_2, .uib_row_3, .uib_row_4 {
+    color: #fff;
+    font-size: 20px;
+    background-color: #d9534f !important;
+    margin: auto !important;
+    margin-top: 10px !important;
+    width: 90% !important;
+    border-radius: 5px !important;
+    font-family: 'Lato';
+}
+
+.uib_row_4 {
+    margin-bottom: 20px !important;
+}
+
+#complaint_phone, #complaint_address {
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#resp {
+    display: none;
+    background: rgba(255, 109, 103, 0.94) !important;
+    border: none !important;
+    z-index: 9999;
+    width: 80% !important;
+    position: fixed;
+    left: 10%;
+    margin: 0 !important;
+}
+
+#fechar_resp {
+    background: none !important;
+    width: 40px;
+    border: none;  
+    outline: none !important;
+    padding: 0px !important;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    margin-left: calc(100% - 40px) !important;
+}
+
+#fechar_resp:active {
+    color: dimgray;
+}
+
+#fechar_resp:hover {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    color: black;
+}
+
+#text_resp {
+    color: white;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+#title_resp {
+    color: white;
+    font-family: 'Lato';
+    font-size: 25px;
+    text-align: left;
+    margin-left: 10px !important;
+    font-weight: 700;
+}
+
+/* CSS Drink Water */
+#title_drinkWater {
+    margin: auto !important;
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 300px !important;
+}
+
+#subtitle_drinkWater {
+    margin: auto !important;
+    margin-bottom: 30px !important;
+    padding-bottom: 10px !important;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 80% !important;
+    border-bottom: 1px black solid;
+}
+
+#btnHuman_drinkWater, #btnDog_drinkWater {
+    width: 75% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#btnHuman_drinkWater .panel-heading, #btnDog_drinkWater .panel-heading {
+    width: 100% !important;
+    height: 60px !important;
+    font-family: 'Lato';
+    color: white !important;
+}
+    
+.panel-title {
+    font-weight: 800 !important;
+    font-size: 40px !important;
+}
+
+#btnDog_drinkWater .panel-heading {
+    background-color: #5BC0DE;
+    text-align: right;
+}
+
+input[type = "number"], #send_human, #send_dog {
+    font-family: 'Lato';
+    font-size: 20px !important;
+    color: black !important;
+}
+
+#input_human, #input_dog {
+    min-height: 45px !important;
+}
+
+::-webkit-input-placeholder {
+   font-family: 'Lato';
+    font-size: 20px !important;
+    color: black !important;
+}
+
+#result {
+    display: none;
+    background-color: rgba(51, 51, 51, 0.9);
+    border: none !important;
+    z-index: 9999;
+    width: 80% !important;
+    position: fixed;
+    left: 10%;
+    margin: 0 !important;
+}
+
+#close_result {
+    background: none !important;
+    width: 40px;
+    border: none;  
+    outline: none !important;
+    padding: 0px !important;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    margin-left: calc(100% - 40px) !important;
+}
+
+#close_result:active {
+    color: dimgray;
+}
+
+#fechar_resp:hover {
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    color: black;
+}
+
+#title_result {
+    color: white;
+    font-family: 'Lato';
+    font-size: 22px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: calc(100% - 20px) !important;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* CSS About Us */
+#title_aboutUs {
+    margin-bottom: 20px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 300px !important;
+}
+
+#img_aboutUs {
+    width: 300px !important;
+    border-radius: 200px;
+    transform: rotate(-180deg);
+}
+
+#img_aboutUs:hover {
+    -webkit-filter: grayscale(100%);
+}
+
+#phrase_aboutUs, #author_aboutUs {
+    margin-bottom: 0px !important;
+    width: 300px !important;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'KG Empire of Dirty';
+}
+
+#author_aboutUs {
+    text-align: right;
+    font-weight: 500 !important;
+    padding-bottom: 10px !important;
+    margin: 0 !important;
+    margin-top: -15px !important;
+    border-bottom: 1px black solid;
+}
+
+#title_project, #title_programers {
+    margin-top: 20px !important;
+    margin-left: 20% !important;
+    margin-right: 20% !important;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder !important;
+    font-family: 'Lato';
+    width: 60% !important;
+    
+}
+
+#text_project, #text_programers {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 90% !important;
+}
+
+/* CSS Settings */
+#title_settings {
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lato';
+    width: 300px !important;
+}
+
+#audio {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 75px;
+    font-size: 50px;
+    color: white;
+    background-color: gray;
+    line-height: 50%;
+    margin-left: calc(50% - 75px);
+    margin-top: 30px;
+}
+
+/* CSS de Fonts */
+@font-face {
+	font-family: "Variane";
+	src: url("../fonts/Variane.ttf");
+}
+
+@font-face {
+	font-family: "Lato";
+    src: url("../fonts/Lato.ttf");
+}
+
+@font-face {
+	font-family: "Otto";
+	src: url("../fonts/Otto.ttf");
+}
+
+@font-face {
+	font-family: "KG Empire of Dirty";
+	src: url("../fonts/KGEmpireofDirt.ttf");
+}
+
+@font-face {
+	font-family: "Jenna Sue";
+	src: url("../fonts/JennaSue.ttf");
+}
+
+@font-face {
+	font-family: "Aaargh";
+	src: url("../fonts/Aaargh.ttf");
+}

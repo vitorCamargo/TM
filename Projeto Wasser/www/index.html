@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+        <link rel="stylesheet" type="text/css" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.css">
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" class="uib-framework-theme">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+
+        <style>
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          
+            @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   
+            @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+
+        <script src="js/app.js"></script>
+        <script src="js/init-app.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="camera/cordova-cam.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script type="application/javascript" src="google_maps/google_maps.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+    </head>
+
+    <body>
+        <div class="upage vertical-col left" id="mainpage">
+            <div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+                <figure class="figure-align">
+                    <img src="media/icon.png" id="icon_main">
+
+                    <figcaption data-position="bottom"></figcaption>
+                </figure>
+            </div>
+
+            <div class="tarea widget uib_w_2 d-margins" data-uib="media/text" data-ver="0" name="uib_w_2" id="title_head_main">
+                <div class="text-container">
+                    <p>BEM VINDO AO</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_3 d-margins" data-uib="media/text" data-ver="0" name="uib_w_3" id="title_main">
+                <div class="text-container">
+                    <p>Wasser</p>
+                </div>
+            </div>
+            <div class="tarea widget uib_w_5 d-margins" data-uib="media/text" data-ver="0" name="uib_w_5" id="slogan_main">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Entre no incrível mundo que Wasser poderá te proporcionar!</p>
+                </div>
+            </div>
+            <center>
+                <button class="btn widget uib_w_4 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_sick_main"><i class="fa fa-stethoscope button-icon-left" data-position="left"></i>Doenças</button>
+                <button class="btn widget uib_w_6 d-margins btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_game_main"><i class="fa fa-gamepad button-icon-left" data-position="left"></i>Jogo</button>
+                <button class="btn widget uib_w_7 d-margins btn-lg btn-warning" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_aware_main"><i class="el el-question-sign button-icon-left" data-position="left"></i>Conscientize-se</button>
+                <button class="btn widget uib_w_8 d-margins btn-lg btn-danger" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_complaint_main"><i class="el el-exclamation-sign button-icon-left" data-position="left"></i>Denuncie</button>
+                <button class="btn widget uib_w_9 d-margins btn-lg btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_drinkWater_main"><i class="glyphicon glyphicon-tint button-icon-left" data-position="left"></i>Beba Água</button>
+                <button class="btn widget uib_w_11 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings_main"><i class="glyphicon glyphicon-cog" data-position="icon only"></i>
+                </button>
+            </center>
+            <hr>
+            <div class="tarea widget uib_w_10 d-margins" data-uib="media/text" data-ver="0" name="uib_w_10" id="footer_main">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Saiba mais <span id="link_footer_main">sobre nós</span>, o projeto, os criadores e programadores</p>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden" id="sick">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_84_15">
+                    <div class="sbs-container widget uib_w_23 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                        <div class="leftContent widget-container">
+                            <button class="btn widget uib_w_40 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                        <div class="rightContent widget-container">
+                            <button class="btn widget uib_w_25 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings"><i class="fa fa-gear" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_70 d-margins" data-uib="media/text" data-ver="0" name="uib_w_70" id="title_sick">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Doenças</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_71 d-margins" data-uib="media/text" data-ver="0" name="uib_w_71" id="subtitle_sick">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Fique por dentro das principais doenças relacionadas à água.</p>
+                        </div>
+                    </div>
+                    <div class="panel-group no_wrap widget uib_w_74 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-0">
+
+                        <div class="panel widget uib_w_76 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-1" data-parent="#bs-accordion-0">Oxiurose</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_12 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_91 d-margins" data-uib="media/text" data-ver="0" name="uib_w_91" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:</strong> Irritabilidade, diarreia, náuseas, emagrecimento, vômitos e dores abdominais.</p>
+
+                                                    <p><strong>Casos Graves:</strong> Esterilidade feminina.</p>
+
+                                                    <p><strong>Causa: </strong>Verme (Enterobius Vermicularis)</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Consumo d'água contaminada pelo verme.&nbsp;</p>
+
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_77 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-2" data-parent="#bs-accordion-0">Ascardíase</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_13 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_92 d-margins" data-uib="media/text" data-ver="0" name="uib_w_92" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Indisposição, perda de peso e chance de ficar anêmica.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Anorexia, dores abdominais e nervosismo.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Verme (Ascaris lumbricoides).</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Consumo d'água contamida pelo verme.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_78 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-0">Disenteria</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_14 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_94 d-margins" data-uib="media/text" data-ver="0" name="uib_w_94" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Provoca diarreias, fortes cólicas, perda de muita água e sais minerais, causando desidratação.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Evacua com sangue(lesões intestinais)</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Bactérias e amebas.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Através da ingestão de água contaminada.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_79 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-0">Leptospirose</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_15 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_95 d-margins" data-uib="media/text" data-ver="0" name="uib_w_95" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>febre, dor de cabeça e dores pelo corpo, podendo também ocorrer vômitos, diarreia e tosse.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Coloração amarelada da pele e dos olhos,hemorragias, meningite, insuficiência renal, hepática e respiratória, que podem levar à óbito.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Bactéria (Leptospira).</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Contato com água infectada.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_80 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-0">Giardíase</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_16 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_96 d-margins" data-uib="media/text" data-ver="0" name="uib_w_96" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Atinge a porção superior do intestino delgado, pode apresentar diarreia, acompanhada com dor abdominal.</p>
+
+                                                    <p><strong>Casos Graves: </strong>Anorexia, associada com má absorção, pode ocasionar perda de peso e anemia.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Protozoários.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Através de ingestão de água contaminada.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_81 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-0">Febre Tifóide</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_17 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_93 d-margins" data-uib="media/text" data-ver="0" name="uib_w_93" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Febre alta, dores de cabeça, mal-estar geral geral, falta de apetite, retardamento do ritimo cardíaco, aumento do volume do baço, manchas rosadas no tronco, prisão de
+                                                        ventre ou diarreia e tosse seca.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Hemorragias abdominais e perfuração do intestino, com risco de o quadro evoluir para septicemia, coma e morte.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Bactéria Salmonela Enterica Sorotipo Typhi.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Consumo de água contaminadas com fezes ou urina do doente ou portador.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_82 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-7" data-parent="#bs-accordion-0">Esquitossomose</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_18 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_97 d-margins" data-uib="media/text" data-ver="0" name="uib_w_97" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Intestinal (caracterizada por diarreias repetidas, sanguinolestas, com dor ou desconforto abdominal).</p>
+
+                                                    <p>Hepatointestinal (Diarreia, epigastralgia, podendo ser detectadas nodulações à palpação do fígado).</p>
+
+                                                    <p>Hepatoesplênica compensada (hipertensão portal com formação de varizes de esôfago).</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Hepatoesplênica descompensada (Apresentafígado volumoso ou contraído devido à fibrose, esplenomegalia, ascite, varizes de esôfago, hematêmese, anemia, desnutrição
+                                                        e hiperesplenismo). O aparecimento de forma grave está relacionado à intensidade da infecção.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Parasita trematódeo digenético.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>O contato humano com águas infextadas pelas cercarias é a maneira pela qual o indivíduo adquire à doença.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_83 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-8" data-parent="#bs-accordion-0">Cólera</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-8" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_19 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_98 d-margins" data-uib="media/text" data-ver="0" name="uib_w_98" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Infecção intestinal, diarreia aquosa e profusa, com ou sem vômitos, dor abdominal e câimbras, produz aumento de anticorpos e confere imunidade por tempo ilimitado.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Desidratação, acidose, colapso circulatório, com choque hipovolêmico e insuficiência renal.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Enterotoxina do Vibrio cholerae.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Ingestão de água contaminada por fezes ou vômitos de doente ou portador. Os alimentos e utensílios podem ser contaminados pela água.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_84 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-9" data-parent="#bs-accordion-0">Amebíase</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-9" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_20 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_99 d-margins" data-uib="media/text" data-ver="0" name="uib_w_99" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas: </strong>Caracterizada por&nbsp;desconforto abdominal leve ou moderado, com sangue e/ou muco nas fezes, a uma diarreia aguda e fulminante, de caráter sanguinolento ou mucoide, acompanhada
+                                                        de febre e calafrios.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>&nbsp;As formas trofozoíticas se disseminam pela corrente sanguínea, provocando abcesso no fígado, nos pulmões ou cérebro. Quando não diagnosticado a tempo, podem
+                                                        levar o paciente a óbito.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Protozoários, cisto, trofozóito.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>&nbsp;Água contaminada por fezes contendo cistos amebianos maduros.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_85 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-10" data-parent="#bs-accordion-0">Febre Chicungunha</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-10" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_21 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_100 d-margins" data-uib="media/text" data-ver="0" name="uib_w_100" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Febre alta, dores de cabeça, cansaço, dor muscular e nas circulações, indisposição, manchas vermelhas na pele e dores.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Aedes Aegypti.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Picada do mosquito que se prolifera em água parada limpa ou não.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_86 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-11" data-parent="#bs-accordion-0">Zica Vírus</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-11" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_22 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_101 d-margins" data-uib="media/text" data-ver="0" name="uib_w_101" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Afeta todos os músculos do corpo, dor de cabeça, coceira no corpo, dor nas articulações, febre baixa, manchas vermelhas na pele, cansaço físico e mental, vermelhidão e
+                                                        sensibilidade nos olhos.</p>
+
+                                                    <p><strong>Casos Graves: </strong>Gestantes contaminadas podem ter microcefalia, uma grave doença neurológica em seu bebê.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Aedes Aegypti.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Picada do mosquito&nbsp;que se prolifera na água.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_87 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-12" data-parent="#bs-accordion-0">Sindrome de Choque de Dengue</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-12" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_23 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_102 d-margins" data-uib="media/text" data-ver="0" name="uib_w_102" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Pulso quase imperceptível, inquietação, palidez e perda de consciência.</p>
+
+                                                    <p><strong>Casos Graves: </strong>Alterações neurológicas - delírio, sonolência, depressão, coma, psicose, demência, amnesia, paralisias e sinais de meningite - problemas cardiorrespiratórios, insuficiência
+                                                        hepática, hemorragia digestiva e derrame pleural.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Aedes Aegypti, grande queda ou ausência de pressão arterial.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Picada do mosquito que se prolifera em água parada limpa ou não.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_88 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-13" data-parent="#bs-accordion-0">Dengue Hemorragica</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-13" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_24 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_103 d-margins" data-uib="media/text" data-ver="0" name="uib_w_103" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Febre alta, dores de cabeça, cansaço, dor muscular e nas circulações, indisposição, enjoos, vômitos, manchas vermelhas na pele e dores abdominais.</p>
+
+                                                    <p><strong>Casos Graves:&nbsp;</strong>Após o terceiro ou quarto dia da doença surgem hemorragias nasais, gengivas, urinárias, gastrointestinais ou uterinas.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Aedes Aegypti, alterações de coagulação sanguínea.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Picada do mosquito que se prolifera em água parada limpa ou não.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_89 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-14" data-parent="#bs-accordion-0">Dengue Clássica</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-14" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_25 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_104 d-margins" data-uib="media/text" data-ver="0" name="uib_w_104" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Febre alta, doras de cabeça, cansaço, dor muscular e nas circulações, indisposição, enjoos, vômitos, manchas vermelhas na pele e dores abdominais.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Aedes Aegypti.</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Picada do mosquito que se preolifera em água parada limpa ou não.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_90 panel-default" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="title_sicks">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-15" data-parent="#bs-accordion-0">Doença do Legionário</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-15" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_26 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="tarea widget uib_w_126 d-margins" data-uib="media/text" data-ver="0" name="uib_w_126" id="text_sicks">
+                                                <div class="widget-container left-receptacle"></div>
+                                                <div class="widget-container right-receptacle"></div>
+                                                <div class="text-container">
+                                                    <p><strong>Sintomas:&nbsp;</strong>Tosse seca, mal-estar, dor muscular e dor de cabeça.</p>
+
+                                                    <p><strong>Casos Graves: </strong>Febre alta, dor toráxica, falta de ar e prostatação,&nbsp;sintomas gastrointestinais também podem estar presentes, incluindo diarréia, vômitos e dor abdominal, grave pneumonia
+                                                        podendo levar à óbito.</p>
+
+                                                    <p><strong>Causa:&nbsp;</strong>Bactéria(Legionella Pneumophilia).</p>
+
+                                                    <p><strong>Modo de Transmissão:&nbsp;</strong>Se transmite pelo ar, através de gotículas contaminadas de água.</p>
+                                                </div>
+                                            </div>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="upage hidden" id="drinkWater">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col" id="page_25_53">
+                    <div class="sbs-container widget uib_w_27 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                        <div class="leftContent widget-container">
+                            <button class="btn widget uib_w_41 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                        <div class="rightContent widget-container">
+                            <button class="btn widget uib_w_30 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings"><i class="fa fa-gear" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="panel widget uib_w_123 d-margins panel-default" data-uib="twitter%20bootstrap/panel" data-ver="1" id="result">
+                        <div class="col uib_col_33 single-col" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_124 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="close_result"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                                </button>
+                                <div class="tarea widget uib_w_125 d-margins" data-uib="media/text" data-ver="0" name="uib_w_125" id="title_result">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tarea widget uib_w_64 d-margins" data-uib="media/text" data-ver="0" name="uib_w_64" id="title_drinkWater">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Beba Água!</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_65 d-margins" data-uib="media/text" data-ver="0" name="uib_w_65" id="subtitle_drinkWater">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Aqui na Wasser, estamos preocupados com o quanto você beba água. Selecione abaixo uma das categorias para que nós possamos lhe mostrar o quanto deve&nbsp;beber a água ou dar a água para o seu cachorrinho.</p>
+                        </div>
+                    </div>
+                    <div class="panel-group no_wrap widget uib_w_113 d-margins" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+                        <div class="panel widget uib_w_114 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="btnHuman_drinkWater">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-0" data-parent="#bs-accordion-1">Humano</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-0" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_29 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+
+                                            <div class="table-thing widget uib_w_119 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                <label class="narrow-control" for="input_human"></label>
+                                                <input class="wide-control form-control default" type="number" id="input_human" placeholder="Digite seu peso">
+                                            </div>
+                                            <button class="btn widget uib_w_120 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="send_human">Enviar</button><span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel widget uib_w_115 panel-primary" data-uib="twitter%20bootstrap/collapsible" data-ver="1" id="btnDog_drinkWater">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-16" data-parent="#bs-accordion-1">Cachorro</a>
+       </h4>
+                            </div>
+                            <div id="bs-accordion-group-16" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="col uib_col_30 single-col" data-uib="layout/col" data-ver="0">
+                                        <div class="widget-container content-area vertical-col">
+                                            <div class="table-thing widget uib_w_121 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                                                <label class="narrow-control" for="input_dog"></label>
+                                                <input class="wide-control form-control default" type="number" placeholder="Digite o peso do cão" id="input_dog">
+                                            </div>
+                                            <button class="btn widget uib_w_122 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="send_dog">Enviar</button>
+                                            <span class="uib_shim"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+
+                    </center>
+                    <center>
+
+                    </center>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="upage hidden" id="complaint">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_26_4">
+                    <div class="sbs-container widget uib_w_31 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                        <div class="leftContent widget-container">
+                            <button class="btn widget uib_w_42 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                        <div class="rightContent widget-container">
+                            <button class="btn widget uib_w_34 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings"><i class="fa fa-gear" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_108 widget-container content-area vertical-col uib-card d-margins section-dimension-108 cpad-0" data-uib="layout/card" data-ver="0"></div>
+                    <div class="panel widget uib_w_109 d-margins panel-warning" data-uib="twitter%20bootstrap/panel" data-ver="1" id="resp">
+                        <div class="col uib_col_28 single-col" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col center">
+                                <button class="btn widget uib_w_110 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="fechar_resp"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                                </button>
+                                <div class="tarea widget uib_w_112 d-margins" data-uib="media/text" data-ver="0" name="uib_w_112" id="title_resp">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="tarea widget uib_w_111 d-margins" data-uib="media/text" data-ver="0" name="uib_w_111" id="text_resp">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tarea widget uib_w_49 d-margins" data-uib="media/text" data-ver="0" name="uib_w_49" id="title_complaint">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Denuncie!</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_50 d-margins" data-uib="media/text" data-ver="0" name="uib_w_50" id="subtitle_complaint">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Se viu? Denuncie!&nbsp;Veja os telefones abaixo para cada tipo de denúncia relacionada&nbsp;a água na cidade de Itapeva-SP.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_3 col-0_5-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_53 d-margins" data-uib="media/text" data-ver="0" name="uib_w_53">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Piscinas sujas em clubes.</p>
+
+                                        <p>Caixas d'águas destampadas em estabelecimentos.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_2 col-0_7-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_51 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_phone"><i class="el el-phone button-icon-left" data-position="left"></i>Telefone</button>
+                                <button class="btn widget uib_w_52 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_address"><i class="el el-address-book button-icon-left" data-position="left"></i>Endereço</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_5 col-0_5-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_56 d-margins" data-uib="media/text" data-ver="0" name="uib_w_56">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Piscinas sujas e&nbsp;água parada em casa.</p>
+
+                                        <p>Caixa d'água destampadas em casa.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_4 col-0_7-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_54 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_phone"><i class="el el-phone button-icon-left" data-position="left"></i>Telefone</button>
+                                <button class="btn widget uib_w_55 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_address"><i class="el el-address-book button-icon-left" data-position="left"></i>Endereço</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_7 col-0_5-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_59 d-margins" data-uib="media/text" data-ver="0" name="uib_w_59">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Obra, pavimentação irregular e acumulo de água em via pública</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_6 col-0_7-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_57 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_phone"><i class="el el-phone button-icon-left" data-position="left"></i>Telefone</button>
+                                <button class="btn widget uib_w_58 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_address"><i class="el el-address-book button-icon-left" data-position="left"></i>Endereço</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                    <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_9 col-0_5-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_62 d-margins" data-uib="media/text" data-ver="0" name="uib_w_62">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>Esgoto, água servida em via pública e&nbsp;fossa irregular.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <div class="col uib_col_8 col-0_7-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <button class="btn widget uib_w_60 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_phone"><i class="el el-phone button-icon-left" data-position="left"></i>Telefone</button>
+                                <button class="btn widget uib_w_61 d-margins btn-link" data-uib="twitter%20bootstrap/button" data-ver="1" id="complaint_address"><i class="el el-address-book button-icon-left" data-position="left"></i>Endereço</button>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="upage hidden" id="aware">
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col left" id="page_27_11">
+                    <div class="sbs-container widget uib_w_35 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                        <div class="leftContent widget-container">
+                            <button class="btn widget uib_w_43 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                        <div class="rightContent widget-container">
+                            <button class="btn widget uib_w_38 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings"><i class="fa fa-gear" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_68 d-margins" data-uib="media/text" data-ver="0" name="uib_w_68" id="title_aware">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Fique por Dentro!</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_69 d-margins" data-uib="media/text" data-ver="0" name="uib_w_69" id="text_aware">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>ENTENDA!! A Água é fonte de toda vida na Terra e&nbsp;isso nos inclui, saber da sua importância ajuda a entender porque devemos cada vez mais economizar cada gota d'água. Sabemos que quase 70% de todo o planeta é coberto por
+                                água, porém, só 2,5% dessa água pode ser usado para o consumo humano.&nbsp;</p>
+
+                            <p>Usar baldes para limpar calçadas e carros, diminuir o tempo de banho, verificar possíveis vazamentos em torneiras e encanamentos e evitar o desperdício de água são algumas das atituldes para garantir que as próximas gerações
+                                também possam desfrutar do maior presente da natureza: água.</p>
+
+                            <p>Moramos em um país muito beneficiado nesse assunto, somos um dos países com mais água potável no mundo, mas também, somos um dos países que mais desperdiçam água, por isso, economizar água é fundamental para toda a nação.</p>
+
+                            <p>Contudo, não basta só economizar água, nos últimos anos, uma epidemia vem se alastrando no Brasil: &nbsp;a dengue. Por causa dela, devemos não só se precupar com o futuro das gerações devido o desperdicio de água, mas também
+                                no nosso presente. A dengue se reproduz com água limpa e parada, ou seja, para ajudar a acabar com essa epidemia, devemos tirar água de pneus e garrafas, trocar a água de animais contantemente,tampar caixas d'água e piscinas
+                                e colocar terra em vasos de flores.</p>
+
+                            <p>"Juntos todos podemos garantir o futuro, e preservar o presente"</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="game">
+            <div id="gamecontainer">
+                <div id="gamescreen">
+                    <div id="sky" class="animated">
+                        <button class="btn widget uib_w_40 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain_game"><i class="el el-chevron-left" data-position="icon only"></i>
+                        </button>
+                        <div id="flyarea">
+                            <div id="ceiling" class="animated"></div>
+                            <!-- This is the flying and pipe area container -->
+                            <div id="player" class="bird animated"></div>
+
+                            <div id="bigscore"></div>
+
+                            <div id="splash"></div>
+
+                            <div id="scoreboard">
+                                <div id="medal"></div>
+                                <div id="currentscore"></div>
+                                <div id="highscore"></div>
+                                <div id="replay">
+                                    <img src="assets/replay.png" alt="replay">
+                                </div>
+                            </div>
+
+                            <!-- Pipes go here! -->
+                        </div>
+                    </div>
+                    <div id="land" class="animated">
+                        <div id="debug"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="boundingbox" id="playerbox"></div>
+            <div class="boundingbox" id="pipebox"></div>
+
+        </div>
+
+        <div class="upage hidden" id="aboutUs">
+            <div class="upage-outer">
+
+                <div class="upage-content ac0 content-area vertical-col" id="page_98_79">
+
+                    <div class="sbs-container widget uib_w_17 d-margins" data-uib="layout/side_by_side" data-ver="0">
+                        <div class="leftContent widget-container">
+                            <button class="btn widget uib_w_44 d-margins btn-xs btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                        <div class="rightContent widget-container">
+                            <button class="btn widget uib_w_18 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_settings"><i class="el el-cog" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="tarea widget uib_w_19 d-margins" data-uib="media/text" data-ver="0" name="uib_w_19" id="title_aboutUs">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div class="text-container">
+                                <p>QUEM SOMOS?</p>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="widget uib_w_20 scale-image d-margins" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="media/us.jpg" id="img_aboutUs">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+                    <center>
+                        <div class="tarea widget uib_w_21 d-margins" data-uib="media/text" data-ver="0" name="uib_w_21" id="phrase_aboutUs">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div class="text-container">
+                                <p>"A imaginação é mais importante que o conhecimento."</p>
+                            </div>
+                        </div>
+                    </center>
+                    <center>
+                        <div class="tarea widget uib_w_22 d-margins" data-uib="media/text" data-ver="0" name="uib_w_22" id="author_aboutUs">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div class="text-container">
+                                <p>~Einsten</p>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="tarea widget uib_w_45 d-margins" data-uib="media/text" data-ver="0" name="uib_w_45" id="title_project">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>O Projeto</p>
+                        </div>
+                    </div>
+
+                    <div class="tarea widget uib_w_46 d-margins" data-uib="media/text" data-ver="0" name="uib_w_46" id="text_project">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>A grande ideia do projeto provém do resultado de&nbsp;nossos esforços no curso de informática da nossa escola. Recebemos um trabalho para criar esse app com o tema: água.&nbsp;Queriamos&nbsp;de forma diferente: conscientizar,
+                                ajudar e entreter as pessoas, tudo num único tema.</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_47 d-margins" data-uib="media/text" data-ver="0" name="uib_w_47" id="title_programers">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Programadores</p>
+                        </div>
+                    </div>
+                    <div class="tarea widget uib_w_48 d-margins" data-uib="media/text" data-ver="0" name="uib_w_48" id="text_programers">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Estudantes do 3º ano do Ensino Médio e amantes da informática, fazemos curso meio período e nos preparando para passar na faculdade. Provavelmente, estamos ouvindo músicas ou programando ou dormindo...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="configuration">
+            <button class="btn widget uib_w_105 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="button_backMain"><i class="el el-chevron-left" data-position="icon only"></i>
+            </button>
+            <div class="tarea widget uib_w_107 d-margins" data-uib="media/text" data-ver="0" name="uib_w_107" id="title_settings">
+                <div class="widget-container left-receptacle"></div>
+                <div class="widget-container right-receptacle"></div>
+                <div class="text-container">
+                    <p>Configurações</p>
+                </div>
+            </div>
+            <button class="btn widget uib_w_106 d-margins btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="audio"><i class="glyphicon glyphicon-music" data-position="icon only"></i>
+            </button>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.transit.min.js"></script>
+        <script src="js/buzz.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
